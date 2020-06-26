@@ -10,7 +10,6 @@ background-color: aquamarine;
     vertical-align: middle;
   }
   .navbar {
-    /* background-color: #73919b;   */
     background-color: #73919b;  
     color: #b6d7e2;  
   
@@ -41,6 +40,14 @@ background-color: aquamarine;
 .shadowPulse {
   animation: shadow-pulse 1s infinite;
 }
+.plannerRow {
+    height: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: 15px;
+  }
 @media (max-width: 768px) {
     .container-fluid {
       /* removes paddding on either side */
@@ -62,7 +69,10 @@ background-color: aquamarine;
     font-size: 30px;
     text-align: center;
   }
-  
+  .navbar {
+    background-color: #73919b;  
+    color: #b6d7e2;  }
+
   #navbar-subtitle {
     padding: 2px;
     font-size: 15px;
@@ -80,14 +90,7 @@ background-color: aquamarine;
     padding: 40px;
   } 
   
-  .plannerRow {
-    height: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 1em;
-    line-height: 1.5;
-    border-radius: 15px;
-  }
+ 
   
   /* style container with time in it */
   .timeBox {
@@ -116,6 +119,16 @@ background-color: aquamarine;
     height: 100%;
     text-align: center;
   }
+  .timeBox {
+    background-color: linen;  
+    color: black;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    display: inline-block;
+    font-size: 1em;
+  }
   .footer {
     background-color: gray;
     
@@ -134,4 +147,19 @@ background-color: aquamarine;
   
     font-size: 10px;
     color:linen; 
+  }
+  .dailyPlan {
+    color: black;  
+    font-size: 12pt;
+    height:100%;
+    width: 100%;
+  }
+
+  /* allows for background set for tiem of day */
+  input {
+    background: transparent;
+    border: none;
+  
+    /* so cursor appears */
+    padding-left: 3px;
   }
